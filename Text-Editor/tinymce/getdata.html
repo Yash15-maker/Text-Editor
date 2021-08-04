@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Editor</title>
+  </head>
+  <body>
+   
+
+    <centre>
+      <form id="get-data-form" method="post">
+		<label for="day">Select a day:</label>
+		<select class="day" id="day">
+			<option value="mon">Mon</option>
+			<option value="tue">Tue</option>
+			<option value="thu">Thu</option>
+		</select>
+		<label for="topic">Select a topic:</label>
+		<select class="topic" id="topic">
+			<option value="first">First</option>
+			<option value="second">Second</option>
+			<option value="third">Third</option>
+		</select>
+
+        <textarea class="tinymce" id="texteditor"></textarea>
+        <input style="margin-top: 40px" type="submit" value="Get Data" />
+      </form>
+    </centre>
+    <div id="data-container"></div>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="plugin/tinymce/tinymce.min.js"></script>
+    <script
+      type="text/javascript"
+      src="plugin/tinymce/init-tinymce.js"
+    ></script>
+    <script type="text/javascript" src="js/getdata.js"></script>
+	
+	
+  </body>
+</html>
